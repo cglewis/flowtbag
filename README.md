@@ -65,6 +65,11 @@ typical use case might look something like:
 
     $ ./flowtbag test.cap > test.out
 
+Or using docker:
+
+    $ docker build -t flowtbag .
+    $ docker run -it -v $(pwd):/pcaps flowtbag /pcaps/file.pcap > file.out
+
 ## Output
 
 Flowtbag currently has two seperate channels for output. To stdout, a stream
